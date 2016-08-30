@@ -16,7 +16,7 @@ var quaBuilder=function(byteNum){
 		return "["+a[0]+(a[1]<0?"":"+")+a[1]+"*sqrt(2)]+["+a[2]+(a[3]<0?"":"+")+a[3]+"*sqrt(2)]i";
 	}
 	function dec2bin(a){
-		return ("0000"+a.toString(2)).substr(-bytes);
+		return ("0".repeat(bytes)+a.toString(2)).substr(-bytes);
 	}
 
 	function mulC(a,b){
