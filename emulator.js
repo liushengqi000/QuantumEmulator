@@ -1,3 +1,9 @@
+/*
+https://quantumexperience.ng.bluemix.net/qstage/
+Example Multi7x7Mod15:
+  qua=new quaBuilder(4);
+  qua.init().x(1).x(2).x(3).x(0).x(1).x(2).x(3).cx(2,1).cx(1,2).cx(2,1).cx(1,0).cx(0,1).cx(1,0).cx(3,0).cx(0,3).cx(3,0).show()
+*/
 var quaBuilder=function(byteNum){
 	//[a,b,c,d]=>[a+b*sqrt(2)]+[c+d*sqrt(2)]i;
 	var i,j,k;
@@ -131,8 +137,3 @@ var quaBuilder=function(byteNum){
 	this.id=function(){
 	}
 }
-/*
-Example Multi7x7Mod15:
-  qua=new quaBuilder(4);
-  qua.init().x(1).x(2).x(3).x(0).x(1).x(2).x(3).cx(2,1).cx(1,2).cx(2,1).cx(1,0).cx(0,1).cx(1,0).cx(3,0).cx(0,3).cx(3,0).show()
-*/
