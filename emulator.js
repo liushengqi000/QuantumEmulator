@@ -135,5 +135,6 @@ var quaBuilder=function(byteNum){
 		return this;
 	}
 	this.id=function(){
+		return this;
 	}
 }
