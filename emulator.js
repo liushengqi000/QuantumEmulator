@@ -18,14 +18,14 @@ quaBuilder.prototype=(function(){
 		return "["+a[0]+(a[1]<0?"":"+")+a[1]+"*sqrt(2)]+["+a[2]+(a[3]<0?"":"+")+a[3]+"*sqrt(2)]i";
 	}
 	function strQ(a){
-		if(isNaN(a[0][0]))
-		return {"value":"entanglement",
-			"theta*2":"entanglement",
-			"delta":"entanglement",
-			"phi":"entanglement",
-			"X":"entanglement",
-			"Y":"entanglement",
-			"Z":"entanglement"
+		if(isNaN(a[0][0])||isNaN(a[0][1])||isNaN(a[0][2])||isNaN(a[0][3])||isNaN(a[1][0])||isNaN(a[1][1])||isNaN(a[1][2])||isNaN(a[1][3]))
+		return {"value":"cnot",
+			"theta*2":"cnot",
+			"delta":"cnot",
+			"phi":"cnot",
+			"X":"cnot",
+			"Y":"cnot",
+			"Z":"cnot"
 		}
 		var theta=Math.acos(
 			Math.sqrt(
